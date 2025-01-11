@@ -5,7 +5,7 @@ proxy-providers:
     interval: 1800
     health-check:
       enable: true
-      url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/all
+      url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/all?target=ClashMeta
       interval: 300
     proxy: 🟢 直连
     url: "机场订阅"
