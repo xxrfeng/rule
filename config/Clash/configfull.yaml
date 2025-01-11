@@ -11,7 +11,7 @@ proxy-providers:
     url: "机场订阅"
       
 # 用于下载订阅时指定UA
-global-ua: clash
+global-ua: clash meta
     
 # 全局配置
 port: 7890
