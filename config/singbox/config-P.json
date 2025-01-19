@@ -21,14 +21,14 @@
     "servers": [
       {"tag": "dns_direct", "address": "223.5.5.5", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
       {"tag": "dns_proxy", "address": "https://dns.cloudflare.com/dns-query", "address_resolver": "dns_direct", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
-      {"tag": "dns_block", "address": ["rcode://name_error"]}
+      {"tag": "dns_block", "address": "rcode://name_error"}
     ],
     "rules": [
       {"outbound": "any", "server": "dns_direct"},
-      {"geosite": ["cn"], "server": "dns_direct"},
+      {"geosite": "cn", "server": "dns_direct"},
       {"clash_mode": "Direct", "server": "dns_direct", "disable_cache": true},
       {"clash_mode": "Global", "server": "dns_proxy", "disable_cache": true},
-      {"rule_set": ["geosite-geolocation-!cn"], "server": "dns_proxy"}
+      {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
     ],
     "independent_cache": false,
     "reverse_mapping": true,
