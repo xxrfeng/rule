@@ -81,7 +81,7 @@
       "type": "remote",
       "tag": "qcy",
       "path": "./qcy.json",
-      "download_url": "订阅地址",
+      "download_url": "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/all?target=sing-box",
       "download_ua": "clash",
       "enable_healthcheck": true,
       "healthcheck_url": "https://www.gstatic.com/generate_204",
